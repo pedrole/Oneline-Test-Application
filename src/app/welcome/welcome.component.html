@@ -1,0 +1,20 @@
+<div class="container bg-light py-4 px-5 mt-2">
+    <h1 class="pb-4">Welcome to the online test application</h1>
+
+    <h4>Instructions:</h4>
+    <ul>
+      <li>Correct answers gives you 5 points</li>
+      <li>You can change the answer before going to the next one</li>
+      <li>You don't need to complete all the answers</li>
+      <li>Any page refresh will reset the answers</li>
+    </ul>
+    <div class="mb-3 mt-5 col-md-4">
+        <label for="exampleFormControlInput1" class="form-label"> Enter your name here</label>
+        <input type="text" class="form-control d-inline-flex" [(ngModel)]="name" placeholder="username">
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary mt-4" routerLink="/quiz"  (click)="startTest()">Click to begin</button>
+      
+      </div>
+
+</div>

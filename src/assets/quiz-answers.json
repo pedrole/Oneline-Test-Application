@@ -1,0 +1,110 @@
+ [
+    {
+      "id":1,
+      "questionText": "Which of the following assemblies can be stored in Global Assembly Cache?",
+      "options": [
+        {
+          "id":1,
+          "text": "Private Assemblies",
+          "correct": false
+        },
+        {
+          "id":2,
+          "text": "Friend Assemblies" ,
+          "correct": false
+
+        },
+        {
+          "id":3,
+          "text": "Public Assemblies"
+          ,
+           "correct": false
+        },
+        {
+          "id":4,
+          "text": "Shared Assemblies",
+           "correct": true
+        }
+      ]
+      
+    },
+    {
+      "id":2,
+      "questionText": "Which of the following .NET components can be used to remove unused references from the managed heap?",
+      "options": [
+        {
+          "id":1,
+          "text": "Language Infrastructure",
+          "correct": false
+        },
+        {
+          "id":2,
+          "text": "CLR",
+          "correct": true
+        },
+        {
+          "id":3,
+          "text": "Garbage Collector",
+          "correct": false
+
+        },
+        {
+          "id":4,
+          "text": "Class Loader",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id":3,
+      "questionText": "Which of the following utilities can be used to compile managed assemblies into processor-specific native code?",
+      "options": [
+        {
+          "id":1,
+          "text": "gacutil",
+          "correct": false
+        },
+        {
+          "id":2,
+          "text": "ngen",
+          "correct": true
+        },
+        {
+          "id":3,
+          "text": "dumpbin",
+          "correct": false
+        },
+        {
+          "id":4,
+          "text": "ildasm",
+          "correct": false
+        }
+      ]
+    },
+    {"id":4,
+      "questionText": "Which of the following is NOT an Arithmetic operator in C#.NET?",
+      "options": [
+        {
+          "id":1,
+          "text": "** (Double Star)",
+          "correct": true
+        },
+        {
+          "id":2,
+          "text": "+ (Plus)",
+          "correct": false
+        },
+        {
+          "id":3,
+          "text": "/ (Divide)",
+          "correct": false
+        },
+        {
+          "id":4,
+          "text": "% (Modulo)",
+          "correct": false
+        }
+      ]
+    }
+  ]
+

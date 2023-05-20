@@ -1,27 +1,71 @@
-# OnlineTestApplication
+# Online Test Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+This system contains three main modules: Quiz, Review, and Result. The quiz section of the online test application accepts the questions in JSON format. The JSON file can be easily shared from the server in the pre-defined format. The application renders the test at the client-side.
+The “Review and display result” section allows users to declare the results immediately
+
+## <a name="_otjb9qoj3nb3"></a><a name="_hql7z7pbg2xo"></a>Screenshots
+
+- Welcome Screen
+
+![](screenshots/welcome.png)
+
+- Questions Screen
+
+![](screenshots/question_screen.png)
+
+- Stats Screen
+
+![](screenshots/question_screen.png)
+
+- Review Screen
+
+![](screenshots/review_screen.png)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## <a name="_4431ng31a3sm"></a>Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular 15
+- Bootstrap 5
 
-## Running end-to-end tests
+## <a name="_rx20czhrlnhp"></a>Spring Planning
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Welcome Screen
+  - The user gets a welcome screen where he can input his/her name 
+    - Create welcome component
+    - style component container
+    - Use local storage to save username on input
+    - navigate to quiz component after input user name
+- Quiz screen
+  - The user user is able to respond one question per screen, selecting one option
+  - The Administrator can dynamically put the questions in the app, following a defined structure
+    - Create model for questions and respective options
+    - Create file in assets to store the questions
+  - The user gets the questions loaded from a json file
+    - create service to load questions from assets
+  - The user can see current number of points, current question number, his name in the title
+- Result Screen
+  - When user finish game, he is able to see the following stats of his/her game:
+    message with result, total number of questions, correct answers, score
+    - Create result component
+    - Use ngif directive to show stats screen when user press button
+    - style stats screen
+  - The user is able to see all the questions with his/her answers, the correct answers and number of points
+    - create table with the required headers
+    - iterate the question and show to the user
+    - Create pipes for show selected answer, correct answers and number of points
+    - style review table
+- Documentation
+  - Take screenshots of App
+  - Write Documentation
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
